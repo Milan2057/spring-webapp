@@ -6,5 +6,5 @@
 
     - name: Deploy static website
       copy:
-        src: ./ # We have define a html page
+        src: /var/lib/jenkins/workspace/Maven/target/*.war # We have define a html page
         dest: /opt/tomcat/webapps/war/
